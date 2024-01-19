@@ -175,7 +175,7 @@ function HomePage() {
         id="jumbotron"
         className="bg-gradient-to-b from-green1 to-green2 relative min-h-[900px] flex items-center pb-20 pt-10"
       >
-        <div className="absolute bottom-0 left-0 ">
+        <div className="absolute bottom-0 left-0">
           <img
             src="./images/shape1.svg"
             alt="shape"
@@ -265,12 +265,17 @@ function HomePage() {
               </ul>
             </div>
             {/* Hubungi Bu Dukuh */}
-            <a href={ProfileCV} download="Hazlan Muhammad Qodri CV">
+            {/* <a href={ProfileCV} download="Hazlan Muhammad Qodri CV"> */}
+            <a
+              href="https://wa.me/082138316616?text=Halo Ibu Dukuh Sumberjo, saya ingin menanyakan tentang..."
+              target="_blank"
+              rel="noreferrer"
+            >
               <button
                 className="hover:bg-yellow2 bg-gradient-to-r from-horizon-text1 to-horizon-text2 font-bold px-5 py-2 rounded-md mt-8"
                 href=""
               >
-                Download my CV!
+                Hubungi Kami
               </button>
             </a>
           </div>
@@ -323,27 +328,41 @@ function HomePage() {
       {/* section Perangkat Desa */}
       <div
         id="perangkat"
-        className="py-20 flex flex-col min-h-[1060px] lg:h-screen lg:items-center lg:justify-center relative mt-96"
+        className="bg-gradient-to-b from-green1 to-green2 py-20 flex flex-col min-h-[1200px] lg:h-screen lg:items-center lg:justify-center relative mt-36"
       >
+        <div className="absolute top-0 left-0 -z-9 -mt-1">
+          <img
+            src="./images/shape1-flip.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 -z-9 -mb-1">
+          <img
+            src="./images/shape1.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
         <div className="hidden md:block">
           <img
-            src="./images/shape-eclipse-blue.svg"
+            src="./images/Asset/Irrigation_Small.svg"
             alt="eclipse"
             className="absolute top-8 xl:top-28 left-20 -z-20"
           />
           <img
-            src="./images/shape-eclipse-yellow.svg"
+            src="./images/Asset/Mountain_Small.svg"
             alt="eclipse"
             className="absolute bottom-8 xl:bottom-28 right-20 -z-20"
           />
         </div>
 
-        <h1 className="text-2xl lg:text-4xl text-center font-bold mb-20">
+        <h1 className="text-2xl lg:text-4xl text-center font-bold mb-20 z-10">
           Perangkat Dusun Sumberjo
           <br />
           Tahun 2024
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center container mx-auto lg:px-10 xl:px-14 2xl:20">
+        <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center container mx-auto lg:px-10 xl:px-14 2xl:20 z-10">
           <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
             <img
               src="./images/Asset/ibuk-epfita.png"
@@ -367,7 +386,7 @@ function HomePage() {
             <h2 className="text-xl lg:text-2xl text-center">
               <span className="font-bold">Ketua Karang Taruna</span>
               <br />
-              [Nama Ketua KK]
+              Agus Riyanto
               <br />
               0852-2862-6402
             </h2>
@@ -381,7 +400,7 @@ function HomePage() {
             <h2 className="text-xl lg:text-2xl text-center">
               <span className="font-bold">Ketua RT 55</span>
               <br />
-              [Nama Ketua RT 55]
+              Sukir
               <br />
               0812-2984-1956
             </h2>
@@ -423,7 +442,7 @@ function HomePage() {
             <h2 className="text-xl lg:text-2xl text-center">
               <span className="font-bold">Ketua RT 58</span>
               <br />
-              Lek Par
+              Lek Parman
               <br />
               0852-2897-4785
             </h2>
@@ -437,7 +456,7 @@ function HomePage() {
             <h2 className="text-xl lg:text-2xl text-center">
               <span className="font-bold">Ketua RT 59</span>
               <br />
-              Lasio
+              Jemakir
               <br />
               0853-2733-9519
             </h2>
@@ -451,31 +470,31 @@ function HomePage() {
             <h2 className="text-xl lg:text-2xl text-center">
               <span className="font-bold">Ketua RT 60</span>
               <br />
-              Kontheng
+              Ery Sukiyanto
               <br />
               0822-4257-0015
             </h2>
           </div>
         </div>
-        <h3 className="text-base lg:text-lg text-center mt-28 mx-10">
+        {/* <h3 className="text-base lg:text-lg text-center mt-28 mx-10">
           * Riset World Health Organization pada tahun 2019. **Pusat Data dan
           Informasi Kementrian Kesehatan RI, 2019.
-        </h3>
+        </h3> */}
       </div>
 
       {/* Section: Video Profile Umum Dukuh Sumberjo*/}
       <div
         id="profile-dukuh"
-        className="text-white bg-space1 py-20 flex flex-col min-h-[700px] lg:h-screen lg:items-center lg:justify-center relative mt-96"
+        className="text-black bg-white py-20 flex flex-col min-h-[700px] lg:h-screen lg:items-center lg:justify-center relative mt-36"
       >
         <div className="hidden md:block">
           <img
-            src="./images/shape-eclipse-blue.svg"
+            src="./images/Asset/Mountain_Small.svg"
             alt="eclipse"
             className="absolute top-8 xl:top-28 left-20 z-20"
           />
           <img
-            src="./images/shape-eclipse-yellow.svg"
+            src="./images/Asset/Forest_Small.svg"
             alt="eclipse"
             className="absolute bottom-8 xl:bottom-28 right-20 z-20"
           />
@@ -496,16 +515,31 @@ function HomePage() {
       </div>
 
       {/* section Slider UMKM */}
-      <div id="projects" className="bg-space1 relative py-20">
+      <div id="projects" className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10">
         <div className="absolute bottom-0 left-0"></div>
+        <div className="absolute top-0 left-0 -z-9 -mt-1">
+          <img
+            src="./images/shape1-flip.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 -z-9 -mb-1">
+          <img
+            src="./images/shape1.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
+        {/* Ganti jadi tema UMKM */}
         <div className="hidden md:block">
           <img
-            src="./images/shape-eclipse-blue.svg"
+            src="./images/Asset/Shop.svg"
             alt="eclipse"
             className="absolute top-8 xl:top-28 left-20 z-1"
           />
           <img
-            src="./images/shape-eclipse-yellow.svg"
+            src="./images/Asset/money.svg"
             alt="eclipse"
             className="absolute bottom-8 xl:bottom-28 right-20 z-1"
           />
@@ -627,12 +661,12 @@ function HomePage() {
       <div id="photos" className="bg-space1 relative text-white py-20">
         <div className="hidden md:block">
           <img
-            src="./images/shape-eclipse-blue.svg"
+            src="./images/Asset/Mountain_Small.svg"
             alt="eclipse"
             className="absolute top-8 xl:top-28 left-20 z-1"
           />
           <img
-            src="./images/shape-eclipse-yellow.svg"
+            src="./images/Asset/Irrigation_Small.svg"
             alt="eclipse"
             className="absolute bottom-8 xl:bottom-28 right-20 z-1"
           />
@@ -730,20 +764,20 @@ function HomePage() {
       <div id="tools" className="bg-space1 py-20">
         <div className="hidden md:block">
           <img
-            src="./images/shape-eclipse-blue.svg"
+            src="./images/Asset/Irrigation_Small.svg"
             alt="eclipse"
-            className="absolute top-20 xl:top-28 left-20 z-1"
+            className="absolute top-20 xl:top-28 left-20 z-10"
           />
           <img
-            src="./images/shape-eclipse-yellow.svg"
+            src="./images/Asset/Path_Small.svg"
             alt="eclipse"
-            className="absolute bottom-20 xl:bottom-28 right-20 z-1"
+            className="absolute bottom-20 xl:bottom-28 right-20 z-10"
           />
         </div>
         <div className="grid grid-cols-1 items-center lg:grid-cols-2 mx-auto px-10 md:px-32 xl:px-56">
           <div className="lg:pr-20 relative">
             <img
-              src="./images/shape-eclipse-yellow.svg"
+              src="./images/Asset/Path_Smallsvg"
               alt="eclipse"
               className="absolute -top-16 left-0 md:left-10 lg:-top-10 lg:-left-16 -z-20"
             />
@@ -790,7 +824,7 @@ function HomePage() {
         <div className="grid grid-cols-1 items-center lg:grid-cols-2 mx-auto px-10 md:px-32 xl:px-56">
           <div className="lg:pr-20 relative">
             <img
-              src="./images/shape-eclipse-yellow.svg"
+              src="./images/Asset/Irrigation_Small.svg"
               alt="eclipse"
               className="absolute -top-16 left-0 md:left-10 lg:-top-10 lg:-left-16 -z-20"
             />
