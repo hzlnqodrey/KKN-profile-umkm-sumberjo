@@ -33,7 +33,7 @@ function Footer() {
         </div>
       </div>
       <div className="w-full bg-gradient-to-tr from-horizon-text1 to-horizon-text2 flex justify-center py-2">
-        <p className="font-bold text-white">Copyright 2022, Hazlan Muhammad Qodri Made with ❤️</p>
+        <p className="font-bold text-white">Copyright 2024, KKN AB.80.134.KP Made with ❤️</p>
       </div>
     </footer>
   )

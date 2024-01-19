@@ -14,7 +14,7 @@ app.use('/', (req, res) => {
 })
 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 9090
 app.listen(PORT, () => {
   console.info(`Server listening on port ${PORT}`)
 });
