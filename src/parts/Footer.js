@@ -1,14 +1,14 @@
 
 function Footer() {
   return (
-    <footer className="bg-space1 flex flex-col justify-center items-center pt-20">
+    <footer className="bg-white flex flex-col justify-center items-center pt-20">
       <div className="w-full flex flex-col lg:flex-row text-grey px-5 pb-10 md:px-20 lg:gap-16">
         <div className="basis-1 lg:basis-4/6">
-          <div className="flex flex-row justify-items-center">
-            <img src="/images/title-logo.svg" alt="logo tedi" className="mr-5 w-2/5" />
-            <h2 className="text-lg text-white  lg:text-1xl text-justify">I'm willing to do anything good for people. Highly motivated to learn something new. I always keep telling myself to become the best version of myself anywhere and any time, to focus up, to push myself at the highest limit, and keep moving forward no matter what happens, because you only live once, YOLO!</h2>
+          <div className="flex flex-row items-center">
+            <img src="/images/Asset/Logo KKN.png" alt="logo tedi" className="mr-5 w-2/5" />
+            <h2 className="text-lg text-black lg:text-1xl text-justify">KKN UPN Veteran Yogyakarta AB.80.134.KP</h2>
           </div>
-          {/* <div className="text-white flex flex-col lg:flex-row flex-wrap items-center gap-4 py-10">
+          {/* <div className="text-black flex flex-col lg:flex-row flex-wrap items-center gap-4 py-10">
             <h4>Didukung oleh</h4>
             <div className="flex flex-row gap-x-4 items-center">
               <img src="./images/logo-kemendikbud.png" alt="logo kemendikbud" className="h-full" />
@@ -17,8 +17,8 @@ function Footer() {
             </div>
           </div> */}
         </div>
-        <div className="text-white basis-1 lg:basis-2/6">
-          <h2 className="text-xl lg:text-2xl font-bold mb-5">Kontak</h2>
+        <div className="text-black basis-1 lg:basis-2/6">
+          <h2 className="text-xl lg:text-2xl font-bold mb-5">Kontak Admin Website</h2>
           <ul className="">
             <li className="mb-3 flex">
               <img src="./images/ic-loc.svg" alt="icon" className="w-5 mr-3"/><a href='https://goo.gl/maps/rH9AgsyDrsAfxEcW7'>Gg. Garboruci, Kledokan, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</a>
@@ -33,7 +33,7 @@ function Footer() {
         </div>
       </div>
       <div className="w-full bg-gradient-to-tr from-horizon-text1 to-horizon-text2 flex justify-center py-2">
-        <p className="font-bold text-white">Copyright 2024, KKN AB.80.134.KP Made with ❤️</p>
+        <p className="font-bold text-black">Copyright 2024, KKN AB.80.134.KP Made with Love ❤️</p>
       </div>
     </footer>
   )

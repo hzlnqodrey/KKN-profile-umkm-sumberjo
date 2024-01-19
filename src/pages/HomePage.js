@@ -2,7 +2,9 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
 import { Chrono } from "react-chrono";
 import ReactTyped from "react-typed";
-import ProfileCV from "../assets/Hazlan Muhammad Qodri_CV.pdf";
+// import ProfileCV from "../assets/Hazlan Muhammad Qodri_CV.pdf";
+
+import BlogHome from "../components/BlogHome";
 
 function HomePage() {
   const items = [
@@ -284,7 +286,7 @@ function HomePage() {
 
       {/* section Informasi dan Potensi Daerah */}
       <div
-        id="news"
+        id="Info"
         className="bg-white relative min-h-[900px] flex items-center pb-10 pt-10 mt-10"
       >
         <div className="absolute bottom-0 left-0 right-0 top-5 mr-20 ml-20">
@@ -346,14 +348,14 @@ function HomePage() {
         </div>
         <div className="hidden md:block">
           <img
-            src="./images/Asset/Irrigation_Small.svg"
+            src="./images/Asset/Path_Small.svg"
             alt="eclipse"
-            className="absolute top-8 xl:top-28 left-20 -z-20"
+            className="absolute bottom-20 xl:bottom-28 right-20 z-1"
           />
           <img
-            src="./images/Asset/Mountain_Small.svg"
+            src="./images/Asset/Irrigation_Small.svg"
             alt="eclipse"
-            className="absolute bottom-8 xl:bottom-28 right-20 -z-20"
+            className="absolute top-20 xl:top-28 left-20 z-1"
           />
         </div>
 
@@ -363,7 +365,7 @@ function HomePage() {
           Tahun 2024
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center container mx-auto lg:px-10 xl:px-14 2xl:20 z-10">
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -377,7 +379,7 @@ function HomePage() {
               0821-3831-6616
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -391,7 +393,7 @@ function HomePage() {
               0852-2862-6402
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -405,7 +407,7 @@ function HomePage() {
               0812-2984-1956
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -419,7 +421,7 @@ function HomePage() {
               0821-5032-7438
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -433,7 +435,7 @@ function HomePage() {
               0813-4243-7719
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -447,7 +449,7 @@ function HomePage() {
               0852-2897-4785
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -461,7 +463,7 @@ function HomePage() {
               0853-2733-9519
             </h2>
           </div>
-          <div className="flex flex-col justify-center mb-10 md:mb-20 border-2">
+          <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
               src="./images/Asset/ibuk-epfita.png"
               alt="icon persons"
@@ -515,7 +517,10 @@ function HomePage() {
       </div>
 
       {/* section Slider UMKM */}
-      <div id="projects" className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10">
+      <div
+        id="UMKM"
+        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10"
+      >
         <div className="absolute bottom-0 left-0"></div>
         <div className="absolute top-0 left-0 -z-9 -mt-1">
           <img
@@ -657,8 +662,37 @@ function HomePage() {
         </div>
       </div>
 
-      {/* section photos */}
-      <div id="photos" className="bg-space1 relative text-white py-20">
+      {/* section Blog News */}
+      <div
+        id="blog"
+        className="py-20 flex flex-col items-center justify-center"
+      >
+        <h1 className="text-2xl lg:text-4xl text-center font-bold mb-20">
+          Blog
+        </h1>
+        <BlogHome />
+      </div>
+
+      {/* section photos 1: Sumberjo */}
+      <div
+        id="Foto_Sumberjo"
+        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] items-center pb-10 pt-10 mt-10"
+      >
+        <div className="absolute bottom-0 left-0"></div>
+        <div className="absolute top-0 left-0 -z-9 -mt-1">
+          <img
+            src="./images/shape1-flip.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 -z-9 -mb-1">
+          <img
+            src="./images/shape1.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
         <div className="hidden md:block">
           <img
             src="./images/Asset/Mountain_Small.svg"
@@ -672,7 +706,7 @@ function HomePage() {
           />
         </div>
         <div className="text-center">
-          <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-5">
+          <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mt-52">
             Photos <span className="text-white">📸</span> of Sumberjo{" "}
           </h1>
           <div className="container mx-auto flex flex-col text-white px-6 lg:px-20">
@@ -684,7 +718,7 @@ function HomePage() {
                     <img src="./images/ic-prev.svg" alt="prev" />
                   </button>
                   <button className="splide__arrow splide__arrow--next">
-                    <img src="./images/ic-next.svg" alt="next" />
+                    <img src="./images/ic-prev.svg" alt="next" />
                   </button>
                 </div>
                 <SplideTrack>
@@ -760,65 +794,144 @@ function HomePage() {
         </div>
       </div>
 
-      {/* section Potensi Wilayah, Pertanian dan  */}
-      <div id="tools" className="bg-space1 py-20">
-        <div className="hidden md:block">
+      {/* section photos 2: KKN */}
+      <div
+        id="Foto_KKN"
+        className="bg-white relative min-h-[700px] items-center pb-10 pt-52 mt-10 z-10"
+      >
+        <div className="absolute top-0 left-0 -z-9 -mt-1">
           <img
-            src="./images/Asset/Irrigation_Small.svg"
-            alt="eclipse"
-            className="absolute top-20 xl:top-28 left-20 z-10"
-          />
-          <img
-            src="./images/Asset/Path_Small.svg"
-            alt="eclipse"
-            className="absolute bottom-20 xl:bottom-28 right-20 z-10"
+            src="./images/shape1-flip.svg"
+            alt="shape"
+            className="w-screen shape"
           />
         </div>
-        <div className="grid grid-cols-1 items-center lg:grid-cols-2 mx-auto px-10 md:px-32 xl:px-56">
-          <div className="lg:pr-20 relative">
-            <img
-              src="./images/Asset/Path_Smallsvg"
-              alt="eclipse"
-              className="absolute -top-16 left-0 md:left-10 lg:-top-10 lg:-left-16 -z-20"
-            />
-            <p className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10 text-center lg:text-start">
-              Wilayah dan <span className="text-white">📍</span> <br /> Potensi
-              Sumberjo <span className="text-white">🫘</span>
-            </p>
-          </div>
-          <div className="grid grid-cols-7 gap-8 md:gap-12 lg:gap-5 xl:gap-6">
-            <div className="relative flex items-center">
-              <img
-                src="./images/Asset/Square.jpg"
-                alt="figma logo"
-                className="w-20"
-              />
-            </div>
-            <div className="relative flex items-center">
-              <img
-                src="./images/Asset/Square.jpg"
-                alt="javascript logo"
-                className="w-20"
-              />
-            </div>
+        <div className="absolute bottom-0 left-0 -z-9 -mb-1">
+          <img
+            src="./images/shape1.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
+        <div className="text-center">
+          <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-5">
+            Dokumentasi <span className="text-white">📸</span> KKN AB.80.134.KP{" "}
+          </h1>
+          <div className="container mx-auto flex flex-col text-white px-6 lg:px-20">
+            <div className="mb-16"></div>
+            <Splide hasTrack={false} aria-label="My Favorite Images">
+              <div className="custom-wrapper justify-items-center content-around ">
+                <div className="splide__arrows absolute right-0 -top-24">
+                  <button className="splide__arrow splide__arrow--prev mr-5">
+                    <img src="./images/Asset/prev-green.svg" alt="prev" />
+                  </button>
+                  <button className="splide__arrow splide__arrow--next">
+                    <img src="./images/Asset/next-green.svg" alt="next" />
+                  </button>
+                </div>
+                <SplideTrack>
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Asset/Rectangle.jpg"
+                        alt="blog"
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Asset/Rectangle.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                      <img
+                        src="./images/Asset/Square.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Asset/Rectangle.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                      <img
+                        src="./images/Asset/Square.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Asset/Rectangle.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                      <img
+                        src="./images/Asset/Square.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Asset/Rectangle.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                      <img
+                        src="./images/Asset/Square.jpg"
+                        alt="blog"
+                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+                </SplideTrack>
+              </div>
+            </Splide>
           </div>
         </div>
       </div>
 
-      {/* section Blog News (Chrono) */}
-
       {/* section Peta dan Map */}
-      <div id="tools" className="bg-space1 py-20">
+      <div
+        id="projects"
+        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10"
+      >
+        <div className="absolute bottom-0 left-0"></div>
+        <div className="absolute top-0 left-0 -z-9 -mt-1">
+          <img
+            src="./images/shape1-flip.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 -z-9 -mb-1">
+          <img
+            src="./images/shape1.svg"
+            alt="shape"
+            className="w-screen shape"
+          />
+        </div>
         <div className="hidden md:block">
           <img
-            src="./images/shape-eclipse-blue.svg"
-            alt="eclipse"
-            className="absolute top-20 xl:top-28 left-20 z-1"
-          />
-          <img
-            src="./images/shape-eclipse-yellow.svg"
+            src="./images/Asset/Path_Small.svg"
             alt="eclipse"
             className="absolute bottom-20 xl:bottom-28 right-20 z-1"
+          />
+          <img
+            src="./images/Asset/Mountain_Small.svg"
+            alt="eclipse"
+            className="absolute top-20 xl:top-28 left-20 z-1"
           />
         </div>
         <div className="grid grid-cols-1 items-center lg:grid-cols-2 mx-auto px-10 md:px-32 xl:px-56">
@@ -828,7 +941,7 @@ function HomePage() {
               alt="eclipse"
               className="absolute -top-16 left-0 md:left-10 lg:-top-10 lg:-left-16 -z-20"
             />
-            <p className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10 text-center lg:text-start">
+            <p className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10 lg:text-start">
               Peta Sumberjo
             </p>
           </div>
