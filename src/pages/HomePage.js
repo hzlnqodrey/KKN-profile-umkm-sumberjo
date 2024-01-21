@@ -170,6 +170,26 @@ function HomePage() {
     },
   ];
 
+  const items2 = [
+    {
+      title: "Letak dan Wilayah",
+      cardTitle: "Letak dan Wilayah",
+      url: "https://www.google.com",
+      cardSubtitle: "- Letak Geografis",
+      cardDetailedText: `Desa Sumberjo dikeliling 4 desa yaitu Desa Sokomoyo di sebelah Utara,
+      Desa Banyunganti dan Desa Peringtali di sebelah Barat, dan Kelurahan
+      Sidomulyo di sebelah Selatan. Desa Sumberjo juga berada di area perbukitan karst Menoreh wilayah utara kabupaten Kulon Progo sehingga memiliki medan yang cukup ekstrim dengan batuan kerasnya. Hal ini menyebabkan akses jalan (aspal atau beton) kurang memadai pada desa Sumberjo. Potensi bahaya yang dapat muncul pada area ini yaitu longsor, banjir, dan gempa bumi. Desa Sumberjo memiliki luas wilayah seluas 105,28 Ha.`,
+
+      media: {
+        name: "Mountain Icon",
+        source: {
+          url: "/images/Asset/Mountain.svg",
+        },
+        type: "IMAGE",
+      },
+    },
+  ]
+
   return (
     <div id="home">
       {/* section jumbotron */}
@@ -336,7 +356,7 @@ function HomePage() {
           <img
             src="./images/shape1-flip.svg"
             alt="shape"
-            className="w-screen shape"
+            className="w-screen shape drop-shadow-xl"
           />
         </div>
         <div className="absolute bottom-0 left-0 -z-9 -mb-1">
@@ -526,7 +546,7 @@ function HomePage() {
           <img
             src="./images/shape1-flip.svg"
             alt="shape"
-            className="w-screen shape"
+            className="w-screen shape drop-shadow-xl"
           />
         </div>
         <div className="absolute bottom-0 left-0 -z-9 -mb-1">
@@ -566,96 +586,226 @@ function HomePage() {
                 </button>
               </div>
               <SplideTrack>
+                {/* FOTO 1 */}
                 <SplideSlide>
                   <div className="flex flex-col md:flex-row">
                     <img
-                      src="./images/Asset/Square.jpg"
+                      src="./images/Foto_UMKM/Sayur Keliling Sumberjo RT 56.jpg"
                       alt="blog"
-                      className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      width={400}
+                      height={400}
+                      className="mb-5 rounded-lg px-20 md:px-0 object-contain mr-10"
                     />
                     <div className="md:ml-8 lg:ml-14">
                       <img src="./images/ic-quote.svg" alt="quote" />
                       <h1 className="text-xl lg:text-3xl text-justify">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Iusto molestiae nulla corrupti amet eaque?
-                        Dolores, ratione. Amet alias nulla perspiciatis nostrum
-                        animi in, deleniti culpa eius blanditiis exercitationem
-                        unde aliquam ullam. Ipsam ut nihil facere eos nam
-                        quibusdam vero obcaecati neque, ab assumenda voluptate
-                        dicta molestias culpa deserunt maxime minima reiciendis
-                        voluptas quidem fuga odit alias?
+                        UMKM ini Menjual sayur keliling untuk masyarakat sekitar
+                        Dusun Sumberjo dan
+                        <br />
+                        menjual berbagai produk dan bahan-bahan untuk kehidupan
+                        sehari-hari sebagai warung kelontong
                       </h1>
                       <a href="https://github.com/Thisable-Dev">
                         <h2 className="text-xl lg:text-2xl font-bold mt-12">
-                          Nama UMKM 1
+                          Jenis UMKM: Penyedia Sayuran dan Tumbuhan
                         </h2>
                         <h2 className="text-xl lg:text-2xl ">
-                          Deskripsi Singkat UMKM 1
+                          Sumberjo, RT 56
                         </h2>
                       </a>
                     </div>
                   </div>
                 </SplideSlide>
+                {/* FOTO 2 */}
                 <SplideSlide>
                   <div className="flex flex-col md:flex-row">
                     <img
-                      src="./images/Asset/Square.jpg"
+                      src="./images/Foto_UMKM/Gula gendhis manis bu Sumini RT 60.jpeg"
                       alt="blog"
+                      width={400}
+                      height={400}
                       className="object-cover mb-5 rounded-lg px-20 md:px-0"
                     />
                     <div className="md:ml-8 lg:ml-14">
                       <img src="./images/ic-quote.svg" alt="quote" />
                       <h1 className="text-xl lg:text-3xl text-justify">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Iusto molestiae nulla corrupti amet eaque?
-                        Dolores, ratione. Amet alias nulla perspiciatis nostrum
-                        animi in, deleniti culpa eius blanditiis exercitationem
-                        unde aliquam ullam. Ipsam ut nihil facere eos nam
-                        quibusdam vero obcaecati neque, ab assumenda voluptate
-                        dicta molestias culpa deserunt maxime minima reiciendis
-                        voluptas quidem fuga odit alias?
+                        UMKM ini bernama Gula Gendhis Manis Bu Sumini yang
+                        beralamatkan di Sumberjo, RT 60.
+                        <br />
+                        Bu Sumini mengolah Gula Gendhis dengan telaten dan
+                        cekatan sehingga hasil dari gula tersebut menjadi sangat
+                        enak.
                       </h1>
-                      <a href="https://github.com/Thisable-Dev">
+                      <a href="https://www.google.com">
                         <h2 className="text-xl lg:text-2xl font-bold mt-12">
-                          Nama UMKM 2
+                          Jenis UMKM: Penyedia Makanan
                         </h2>
                         <h2 className="text-xl lg:text-2xl ">
-                          Deskripsi Singkat UMKM 2
+                          Sumberjo, RT 60
                         </h2>
                       </a>
                     </div>
                   </div>
                 </SplideSlide>
+                {/* FOTO 3 */}
                 <SplideSlide>
                   <div className="flex flex-col md:flex-row">
                     <img
-                      src="./images/Asset/Square.jpg"
+                      src="./images/Foto_UMKM/Gerobak Embun (Snack dari Biji Durian).jpeg"
                       alt="blog"
+                      width={400}
+                      height={400}
                       className="object-cover mb-5 rounded-lg px-20 md:px-0"
                     />
                     <div className="md:ml-8 lg:ml-14">
                       <img src="./images/ic-quote.svg" alt="quote" />
                       <h1 className="text-xl lg:text-3xl text-justify">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Iusto molestiae nulla corrupti amet eaque?
-                        Dolores, ratione. Amet alias nulla perspiciatis nostrum
-                        animi in, deleniti culpa eius blanditiis exercitationem
-                        unde aliquam ullam. Ipsam ut nihil facere eos nam
-                        quibusdam vero obcaecati neque, ab assumenda voluptate
-                        dicta molestias culpa deserunt maxime minima reiciendis
-                        voluptas quidem fuga odit alias?
+                        UMKM yang bernama Gerobak Embun ini menjual berbagai
+                        makanan dan minuman yang kekinian.
+                        <br />
+                        Selain itu, Gerobak Embun juga mengolah serta menjual
+                        Snack dari Biji Durian yang sangat enak dan gurih.
                       </h1>
                       <a href="https://github.com/Thisable-Dev">
                         <h2 className="text-xl lg:text-2xl font-bold mt-12">
-                          Nama UMKM 3
+                          Jenis UMKM: Penyedia Makanan dan Minuman
                         </h2>
                         <h2 className="text-xl lg:text-2xl ">
-                          Deskripsi Singkat UMKM 3
+                          Sumberjo, RT 59
                         </h2>
                       </a>
                     </div>
                   </div>
                 </SplideSlide>
+
+                {/* FOTO 4 */}
+                <SplideSlide>
+                  <div className="flex flex-col md:flex-row">
+                    <img
+                      src="./images/Foto_UMKM/Ternak Kambing pak Sakiman RT 60.jpeg"
+                      alt="blog"
+                      width={400}
+                      height={400}
+                      className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                    />
+                    <div className="md:ml-8 lg:ml-14">
+                      <img src="./images/ic-quote.svg" alt="quote" />
+                      <h1 className="text-xl lg:text-3xl text-justify">
+                        UMKM ini bernama Ternak Kambing Pak Sakiman yang
+                        bertempat di RT 60
+                        <br />
+                        Bapak Sakiman mengembala dan mengasuh kambing dengan
+                        sangat baik.
+                      </h1>
+                      <a href="https://github.com/Thisable-Dev">
+                        <h2 className="text-xl lg:text-2xl font-bold mt-12">
+                          Jenis UMKM: Penyedia dan Jasa Hewan Ternak
+                        </h2>
+                        <h2 className="text-xl lg:text-2xl ">
+                          Sumberjo, RT 60
+                        </h2>
+                      </a>
+                    </div>
+                  </div>
+                </SplideSlide>
+                {/* FOTO 5 */}
+                <SplideSlide>
+                  <div className="flex flex-col md:flex-row">
+                    <img
+                      src="./images/Foto_UMKM/Snack and Cake RT 60.jpeg"
+                      alt="blog"
+                      width={400}
+                      height={400}
+                      className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                    />
+                    <div className="md:ml-8 lg:ml-14">
+                      <img src="./images/ic-quote.svg" alt="quote" />
+                      <h1 className="text-xl lg:text-3xl text-justify">
+                        UMKM ini bernama Snack and Cake
+                        <br />
+                        UMKM ini mengolah serta menjual Snack dan Cake yang
+                        sangat enak dan lezat.
+                      </h1>
+                      <a href="https://github.com/Thisable-Dev">
+                        <h2 className="text-xl lg:text-2xl font-bold mt-12">
+                          Jenis UMKM: Penyedia Makanan
+                        </h2>
+                        <h2 className="text-xl lg:text-2xl ">
+                          Sumberjo, RT 60
+                        </h2>
+                      </a>
+                    </div>
+                  </div>
+                </SplideSlide>
+                {/* FOTo 6 */}
+                <SplideSlide>
+                  <div className="flex flex-col md:flex-row">
+                    <img
+                      src="./images/Foto_UMKM/Geblek Tempe bu Ngadinem.jpeg"
+                      alt="blog"
+                      width={400}
+                      height={400}
+                      className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                    />
+                    <div className="md:ml-8 lg:ml-14">
+                      <img src="./images/ic-quote.svg" alt="quote" />
+                      <h1 className="text-xl lg:text-3xl text-justify">
+                        UMKM ini bernama Geblek Tempe Bu Ngadinem
+                        <br />
+                        UMKM ini mengolah serta menjual Geblek Tmpe yang sangat
+                        enak dan lezat.
+                      </h1>
+                      <a href="https://github.com/Thisable-Dev">
+                        <h2 className="text-xl lg:text-2xl font-bold mt-12">
+                          Jenis UMKM: Penyedia Makanan
+                        </h2>
+                        <h2 className="text-xl lg:text-2xl ">
+                          Sumberjo, RT 58
+                        </h2>
+                      </a>
+                    </div>
+                  </div>
+                </SplideSlide>
+
+                {/* FOTO 7 */}
+                <SplideSlide>
+                  <div className="flex flex-col md:flex-row">
+                    <img
+                      src="./images/Foto_UMKM/Geblek Tempe bu Ngadinem.jpeg"
+                      alt="blog"
+                      width={400}
+                      height={400}
+                      className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                    />
+                    <div className="md:ml-8 lg:ml-14">
+                      <img src="./images/ic-quote.svg" alt="quote" />
+                      <h1 className="text-xl lg:text-3xl text-justify">
+                        UMKM ini bernama Geblek Tempe Bu Ngadinem
+                        <br />
+                        UMKM ini mengolah serta menjual Geblek Tmpe yang sangat
+                        enak dan lezat.
+                      </h1>
+                      <a href="https://github.com/Thisable-Dev">
+                        <h2 className="text-xl lg:text-2xl font-bold mt-12">
+                          Jenis UMKM: Penyedia Makanan
+                        </h2>
+                        <h2 className="text-xl lg:text-2xl ">
+                          Sumberjo, RT 58
+                        </h2>
+                      </a>
+                    </div>
+                  </div>
+                </SplideSlide>
+                {/* FOTO 8 */}
+                {/* FOTo 9 */}
+
+                {/* FOTO 10 */}
+                {/* FOTO 11 */}
+                {/* FOTo 12 */}
+
+                {/* FOTO 13 */}
+                {/* FOTO 14 */}
+                {/* FOTo 15 */}
               </SplideTrack>
             </div>
           </Splide>
@@ -683,7 +833,7 @@ function HomePage() {
           <img
             src="./images/shape1-flip.svg"
             alt="shape"
-            className="w-screen shape"
+            className="w-screen shape drop-shadow-xl"
           />
         </div>
         <div className="absolute bottom-0 left-0 -z-9 -mb-1">
@@ -722,68 +872,208 @@ function HomePage() {
                   </button>
                 </div>
                 <SplideTrack>
+                  {/* Catatan: Video dijadikan GIF */}
+
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/1.jpg"
                         alt="blog"
+                        width={800}
+                        height={800}
                         className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/2.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/3.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/4.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/5.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Square.jpg"
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/6.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/7.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/8.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/9.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/11.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/12.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/15.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/16.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/17.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/19.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Gebyar kemerdekaan 78/20.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
+                      />
+                    </div>
+                  </SplideSlide>
+
+                  <SplideSlide>
+                    <div className="flex flex-col md:flex-row justify-center content-around">
+                      <img
+                        src="./images/Dokumentasi_Sumberjo/Merti Padukuhan/1.jpg"
+                        alt="blog"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
@@ -794,6 +1084,7 @@ function HomePage() {
         </div>
       </div>
 
+      {/* OPSI 1 - Slider */}
       {/* section photos 2: KKN */}
       <div
         id="Foto_KKN"
@@ -902,9 +1193,13 @@ function HomePage() {
         </div>
       </div>
 
+      {/* OPSI 2 - Horizontal Chrono */}
+      {/* section photos 2: KKN */}
+
+
       {/* section Peta dan Map */}
       <div
-        id="projects"
+        id="peta"
         className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10"
       >
         <div className="absolute bottom-0 left-0"></div>
@@ -912,7 +1207,7 @@ function HomePage() {
           <img
             src="./images/shape1-flip.svg"
             alt="shape"
-            className="w-screen shape"
+            className="w-screen shape drop-shadow-xl"
           />
         </div>
         <div className="absolute bottom-0 left-0 -z-9 -mb-1">
@@ -943,6 +1238,8 @@ function HomePage() {
             />
             <p className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10 lg:text-start">
               Peta Sumberjo
+              <br />
+              dan Map UMKM
             </p>
           </div>
           <div className="grid grid-cols-7 gap-8 md:gap-12 lg:gap-5 xl:gap-6">
@@ -963,6 +1260,8 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 }

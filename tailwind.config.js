@@ -13,7 +13,7 @@ module.exports = {
       blue3: "#DBF0FF",
       yellow1: "#F7BD4A",
       yellow2: "#B27E15",
-      green1: "#78A46A",
+      green1: "#57A162",
       green2: "#46824B",
       space1: "#111827",
       space2: "#4b5563",
