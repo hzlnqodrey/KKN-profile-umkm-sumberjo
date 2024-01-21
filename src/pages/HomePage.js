@@ -1,7 +1,7 @@
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
 import { Chrono } from "react-chrono";
-import ReactTyped from "react-typed";
+// import ReactTyped from "react-typed";
 // import ProfileCV from "../assets/Hazlan Muhammad Qodri_CV.pdf";
 
 import BlogHome from "../components/BlogHome";
@@ -219,7 +219,7 @@ function HomePage() {
         type: "IMAGE",
       },
     },
-  ]
+  ];
 
   return (
     <div id="home">
@@ -254,8 +254,8 @@ function HomePage() {
               Datang di
             </h1>
             <h1 className="font-extrabold text-transparent text-6xl leading-relaxed bg-clip-text bg-gradient-to-r from-horizon-text1 to-horizon-text2 mb-6">
-              {" "}
-              <ReactTyped
+              Padukuhan Sumberjo{" "}
+              {/* <ReactTyped
                 strings={[
                   "Padukuhan Sumberjo",
                   "Kalurahan Jatimulyo",
@@ -268,7 +268,7 @@ function HomePage() {
                 backSpeed={20}
                 cursorChar=" |"
                 showCursor={true}
-              />
+              /> */}
             </h1>
             <h2 className="font-regular text-1xl mb-6">
               <br />
@@ -1333,8 +1333,6 @@ function HomePage() {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
