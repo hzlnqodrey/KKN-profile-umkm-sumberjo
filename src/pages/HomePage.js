@@ -188,6 +188,37 @@ function HomePage() {
         type: "IMAGE",
       },
     },
+    {
+      title: "Kependudukan",
+      cardTitle: "Kependudukan",
+      url: "https://www.google.com",
+      cardSubtitle: "- Data Penduduk",
+      cardDetailedText: `Jumlah penduduk di Dusun Sumberjo 428 jiwa dengan jumlah kepadatan
+      penduduk sebanyak 4-5 jiwa/Ha. Berdasar pada pendataan penduduk yang
+      dilakukan pada Tahun 2023 jumlah laki-laki berjumlah 210 jiwa dan perempuan
+      berjumlah 218 jiwa. -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`,
+      media: {
+        name: "People Icon",
+        source: {
+          url: "/images/Asset/People.svg",
+        },
+        type: "IMAGE",
+      },
+    },
+    {
+      title: "Keadaan Iklim",
+      cardTitle: "Keadaan Iklim",
+      url: "https://www.google.com",
+      cardSubtitle: "Cuaca dan Kerentanan Hujan",
+      cardDetailedText: `Curah hujan pada area ini (mengutip dari website resmi pemkab Kulon Progo) rata-rata per tahunnya mencapai 2.150 mm, dengan rata-rata hari hujan sebanyak 106 hari per tahun atau 9 hari per bulan dengan curah hujan tertinggi pada bulan Januari dan terendah pada bulan Agustus. Suhu terendahnya lebih kurang 24,2°C (Juli) dan tertinggi 25,4°C (April), dengan kelembaban terendah 78,6% (Agustus), serta tertinggi 85,9% (Januari). Intensitas penyinaran matahari rata-rata bulanan mencapai lebih kurang 45,5%, terendah 37,5% (Maret) dan tertinggi 52,5% (Juli).`,
+      media: {
+        name: "People Icon",
+        source: {
+          url: "/images/Asset/Climate.svg",
+        },
+        type: "IMAGE",
+      },
+    },
   ]
 
   return (
@@ -1195,7 +1226,49 @@ function HomePage() {
 
       {/* OPSI 2 - Horizontal Chrono */}
       {/* section photos 2: KKN */}
-
+      <div
+        id="PhotoKKN"
+        className="bg-white relative min-h-[900px] flex items-center pb-10 pt-10 mt-10"
+      >
+        <div className="absolute bottom-0 left-0 right-0 top-5 mr-20 ml-20">
+          <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10">
+            <span className="text-white"> 📍</span>
+            Kolom Informasi dan Potensi Daerah{" "}
+            <span className="text-white"> 📍</span>
+          </h1>
+          <Chrono
+            items={items2}
+            mode="HORIZONTAL"
+            itemWidth={150}
+            showSingle
+            enableOutline
+            textOverlay
+            cardHeight={200} // sets the height of the timeline card to 200px
+            mediaHeight={100} // sets the height of the media element to 100px
+            contentDetailsHeight={80} // sets the height of the detailed text to 80px
+            readMore={true}
+            showAllCardsHorizontal={true}
+            theme={{
+              primary: "orange", // Short Description
+              secondary: "orange", // Year Highlighter
+              cardBgColor: "#FFFFF0", // Card Background
+              cardForeColor: "#182747", // Title and long paragraphs
+              titleColor: "black", // Year Title
+              titleColorActive: "black", // Year Title Active
+            }}
+          >
+            <div className="chrono-icons">
+              <img src="./images/clock-logo.svg" alt="clock" />
+              <img src="./images/clock-logo.svg" alt="clock" />
+              <img src="./images/clock-logo.svg" alt="clock" />
+              <img src="./images/clock-logo.svg" alt="clock" />
+              <img src="./images/clock-logo.svg" alt="clock" />
+              <img src="./images/clock-logo.svg" alt="clock" />
+              <img src="./images/clock-logo.svg" alt="clock" />
+            </div>
+          </Chrono>
+        </div>
+      </div>
 
       {/* section Peta dan Map */}
       <div
@@ -1261,7 +1334,7 @@ function HomePage() {
         </div>
       </div>
 
-      
+
     </div>
   );
 }
