@@ -1180,7 +1180,7 @@ function HomePage() {
       {/* section Peta dan Map */}
       <div
         id="peta"
-        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10"
+        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] items-center pb-10 pt-10 mt-10"
       >
         <div className="absolute bottom-0 left-0"></div>
         <div className="absolute top-0 left-0 -z-9 -mt-1">
