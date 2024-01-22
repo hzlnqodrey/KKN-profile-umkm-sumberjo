@@ -94,8 +94,8 @@ function Navbar() {
               scrollPosition < 100 ? 'bg-white text-blue1' : 'bg-blue1 text-white',
               'rounded p-2 transition'
             )}>Unduh Versi Beta</a></li> */}
-            <li><a href="https://linktr.ee/tedi.temandisabilitas" className="rounded p-2 transition bg-blue3 text-blue1" rel="noreferrer" target="_blank">
-              Unduh Versi Beta
+            <li><a href="https://wa.me/082138316616?text=Halo Ibu Dukuh Sumberjo, saya ingin menanyakan tentang..."  className="rounded p-2 transition bg-blue3 text-blue1" rel="noreferrer" target="_blank">
+              Hubungi Kami
             </a></li>
           </ul>
         </div>

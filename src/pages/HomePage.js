@@ -5,8 +5,9 @@ import { Chrono } from "react-chrono";
 // import ProfileCV from "../assets/Hazlan Muhammad Qodri_CV.pdf";
 
 import BlogHome from "../components/BlogHome";
+import MyComponent from "../components/MapHome";
 
-// MAP
+
 
 function HomePage() {
   const items = [
@@ -242,7 +243,7 @@ function HomePage() {
                 <li className="flex">
                   <a href="https://www.linkedin.com/in/hazlanmqodri/">
                     <img
-                      src="./images/linkedin-logo.svg"
+                      src="./images/Asset/Youtube.svg"
                       alt="icon"
                       className="w-5 mr-3 bg-spa"
                     />
@@ -260,7 +261,7 @@ function HomePage() {
                 <li className="ml-10 flex">
                   <a href="https://github.com/hzlnqodrey">
                     <img
-                      src="./images/github-logo.svg"
+                      src="./images/Asset/Tiktok.svg"
                       alt="icon"
                       className="w-5 mr-3"
                     />
@@ -850,7 +851,7 @@ function HomePage() {
                     <img src="./images/ic-prev.svg" alt="prev" />
                   </button>
                   <button className="splide__arrow splide__arrow--next">
-                    <img src="./images/ic-prev.svg" alt="next" />
+                    <img src="./images/ic-next.svg" alt="next" />
                   </button>
                 </div>
                 <SplideTrack>
@@ -1103,80 +1104,78 @@ function HomePage() {
                   </button>
                 </div>
                 <SplideTrack>
+                  {/* FOTO 1 */}
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_KKN/Pembekalan/1.jpg"
                         alt="blog"
+                        width={800}
+                        height={800}
                         className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
+                  {/* FOTO 2 */}
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_KKN/Pembekalan/2.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
+                  {/* FOTO 3 */}
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_KKN/Pembekalan/3.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
+
+                  {/* FOTO 4 */}
                   <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_KKN/Pembekalan/4.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0"
                       />
                     </div>
                   </SplideSlide>
-                  <SplideSlide>
+
+                  {/* FOTO 5 */}
+                  {/* <SplideSlide>
                     <div className="flex flex-col md:flex-row justify-center content-around">
                       <img
-                        src="./images/Asset/Rectangle.jpg"
+                        src="./images/Dokumentasi_KKN/TPA/1.jpg"
                         alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
-                      />
-                      <img
-                        src="./images/Asset/Square.jpg"
-                        alt="blog"
-                        className="object-scale-down md:ml-10 lg:ml-20 rounded-lg px-20 md:px-0"
+                        width={800}
+                        height={800}
+                        className="object-cover mb-5 rounded-lg px-20 md:px-0 h-96"
                       />
                     </div>
-                  </SplideSlide>
+                  </SplideSlide> */}
+
+                  
                 </SplideTrack>
               </div>
             </Splide>
           </div>
         </div>
       </div>
-
-      {/* OPSI 2 - Horizontal Chrono */}
-      {/* section photos 2: KKN */}
 
       {/* section Peta dan Map */}
       <div
@@ -1212,11 +1211,6 @@ function HomePage() {
         </div>
         <div className="grid grid-cols-1 items-center lg:grid-cols-2 mx-auto px-10 md:px-32 xl:px-56">
           <div className="lg:pr-20 relative">
-            <img
-              src="./images/Asset/Irrigation_Small.svg"
-              alt="eclipse"
-              className="absolute -top-16 left-0 md:left-10 lg:-top-10 lg:-left-16 -z-20"
-            />
             <p className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10 lg:text-start">
               Peta Sumberjo
               <br />
@@ -1224,24 +1218,10 @@ function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-7 gap-8 md:gap-12 lg:gap-5 xl:gap-6">
-            {/* <div className="relative flex items-center">
-              <img
-                src="./images/Asset/Square.jpg"
-                alt="figma logo"
-                className="w-20"
-              />
-            </div>
-            <div className="relative flex items-center">
-              <img
-                src="./images/Asset/Square.jpg"
-                alt="javascript logo"
-                className="w-20"
-              />
-            </div> */}
+            <MyComponent />
           </div>
         </div>
       </div>
-
     </div>
   );
 }
