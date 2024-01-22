@@ -77,7 +77,9 @@ function Navbar() {
           <ul className="sidebar lg:hidden bg-white text-black shadow fixed flex flex-col justify-start items top-0 bottom-0 -right-80 w-80 z-30 px-5 font-bold hover:text-blue" id="navUl">
             <li className="py-4 mt-20"><NavLink to="" className="mr-5">Beranda</NavLink></li>
             <li className="py-4"><NavLink to="blog" className="mr-5">Blog</NavLink></li>
-            <li className="py-4"><a href="https://linktr.ee/tedi.temandisabilitas" className="bg-blue1 text-white rounded-full py-2 px-5" rel="noreferrer" target="_blank">Unduh Versi Beta</a></li>
+            <li><a href="https://wa.me/082138316616?text=Halo Ibu Dukuh Sumberjo, saya ingin menanyakan tentang..."  className="rounded p-2 transition bg-blue3 text-blue1" rel="noreferrer" target="_blank">
+              Hubungi Kami
+            </a></li>
           </ul>
 
           {/* responsive < pc */}
