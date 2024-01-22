@@ -7,8 +7,6 @@ import { Chrono } from "react-chrono";
 import BlogHome from "../components/BlogHome";
 import MyComponent from "../components/MapHome";
 
-
-
 function HomePage() {
   const items = [
     {
@@ -292,7 +290,7 @@ function HomePage() {
         id="Info"
         className="bg-white relative min-h-[900px] flex items-center pb-10 pt-10 mt-10"
       >
-        <div className="absolute bottom-0 left-0 right-0 top-5 mr-20 ml-20">
+        <div className="absolute bottom-0 left-0 right-0 top-5 mr-5 ml-5 sm:mr-5 sm:ml-5 md:mr-5 md:ml-5 lg:mr-10 lg:ml-10">
           <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-10">
             <span className="text-white"> 📍</span>
             Kolom Informasi dan Potensi Daerah{" "}
@@ -1168,8 +1166,6 @@ function HomePage() {
                       />
                     </div>
                   </SplideSlide> */}
-
-                  
                 </SplideTrack>
               </div>
             </Splide>
@@ -1180,7 +1176,7 @@ function HomePage() {
       {/* section Peta dan Map */}
       <div
         id="peta"
-        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] items-center pb-10 pt-10 mt-10"
+        className="bg-gradient-to-b from-green1 to-green2 relative min-h-[1080px] flex items-center pb-10 pt-10 mt-10"
       >
         <div className="absolute bottom-0 left-0"></div>
         <div className="absolute top-0 left-0 -z-9 -mt-1">
