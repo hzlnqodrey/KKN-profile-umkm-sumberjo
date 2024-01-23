@@ -392,7 +392,7 @@ function HomePage() {
           </div>
           <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
-              src="./images/Asset/RT_55.jpg"
+              src="./images/Asset/RT_55.png"
               alt="icon persons"
               className="max-w-sm mb-10 object-contain h-72 w-144"
             />
@@ -434,7 +434,7 @@ function HomePage() {
           </div>
           <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
-              src="./images/Asset/RT_58.jpg"
+              src="./images/Asset/RT_58.png"
               alt="icon persons"
               className="max-w-sm mb-10 object-contain h-72 w-144"
             />
@@ -462,7 +462,7 @@ function HomePage() {
           </div>
           <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
-              src="./images/Asset/RT_60.jpg"
+              src="./images/Asset/RT_60.png"
               alt="icon persons"
               className="max-w-sm mb-10 object-contain h-72 w-144"
             />
