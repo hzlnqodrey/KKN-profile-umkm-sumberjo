@@ -198,7 +198,7 @@ function HomePage() {
             alt="Profile"
             className="lg:absolute lg:right-60 lg:bottom-0 max-w-sm z-10 px-400 mt-40 top-20 bottom-50"
           />
-          <div className="text-black mx-5 pb-8 z-10 lg:order-first my-auto drop-shadow-lg shadow-black">
+          <div className="text-white mx-5 pb-8 z-10 lg:order-first my-auto drop-shadow-lg shadow-black">
             <h1 className="font-extrabold text-transparent text-4xl leading-relaxed bg-clip-text bg-gradient-to-r from-horizon-text1 to-horizon-text2 mb-5 mt-12 drop-shadow-2xl">
               Sugeng Rawuh <span className="text-darkgreen">👋</span>! Selamat
               Datang di
@@ -224,18 +224,24 @@ function HomePage() {
               <br />
               Padukuhan Sumberjo adalah Padukuhan di Kalurahan Jatimulyo,
               Kapanewon Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa
-              Yogyakarta, Indonesia. Padukuhan ini berjarak sekitar 7 km dari
+              Yogyakarta, Indonesia.
+              <br />
+              <br />
+              Padukuhan ini berjarak sekitar 7 km dari
               pusat pemerintahan Kapanewon Girimulyo atau 9,2 km dari Ibukota
               Kabupaten Kulon Progo. Padukuhan Sumberjo berada di antara sungai
               kecil yang mana aliran sungai tersebut berasal dari tempat wisata
-              air terjun (curug). Padukuhan Sumberjo juga berada di area
+              air terjun (curug). 
+              <br />
+              <br />
+              Padukuhan Sumberjo juga berada di area
               perbukitan karst Menoreh wilayah utara kabupaten Kulon Progo
               sehingga memiliki medan yang cukup ekstrim dengan batuan kerasnya.
             </h2>
             <div className="text-white basis-3 lg:basis-2/6 mt-50">
               <ul className="flex flex-row justify-self-start content-between">
                 <li className="flex">
-                  <a href="https://www.linkedin.com/in/hazlanmqodri/">
+                  <a href="https://www.youtube.com">
                     <img
                       src="./images/youtube_1.svg"
                       alt="icon"
@@ -244,7 +250,7 @@ function HomePage() {
                   </a>
                 </li>
                 <li className="ml-10 flex">
-                  <a href="https://instagram.com/hzln.qodrey">
+                  <a href="https://instagram.com/storyofsumberjo">
                     <img
                       src="./images/instagram-logo.svg"
                       alt="icon"
@@ -253,7 +259,7 @@ function HomePage() {
                   </a>
                 </li>
                 <li className="ml-10 flex">
-                  <a href="https://github.com/hzlnqodrey">
+                  <a href="https://tiktok.com">
                     <img
                       src="./images/tiktok_1.svg"
                       alt="icon"
@@ -1233,8 +1239,9 @@ function HomePage() {
       >
         <div className="text-center">
           <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-5">
+          <span className="text-white">🛒 </span>
             Map UMKM Sumberjo
-            <span className="text-white">🗺️ 🛒</span>
+            <span className="text-white"> 🗺️ </span>
           </h1>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-1 gap-y-1 lg:gap-x-1 lg:gap-y-1">
             <div className="flex flex-row items-center justify-center mb-10 md:mb-20 col-start-1 col-span-3 mt-20">
@@ -1245,9 +1252,9 @@ function HomePage() {
               />
             </div>
           </div>
-
         </div>
       </div>
+
     </div>
   );
 }
