@@ -18,7 +18,7 @@ const OPTIONS = {
 const center = {
   lat: -7.773725986480713,
   lng: 110.13545227050781,
-  zoom: 15
+  zoom: 17
 };
 
 function MyComponent() {
