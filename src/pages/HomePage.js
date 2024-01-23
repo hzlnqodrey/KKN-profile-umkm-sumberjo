@@ -1214,6 +1214,30 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Map UMKM Topal */}
+      <div
+        id="Map_UMKM"
+        className="bg-white relative min-h-[700px] items-center pb-10 pt-40 mt-2 z-10"
+      >
+        <div className="text-center">
+          <h1 className="font-extrabold text-center text-transparent text-2xl lg:text-4xl sm:text-4xl bg-clip-text bg-gradient-to-tr from-horizon-text1 to-horizon-text2 mb-5">
+            Map UMKM Sumberjo
+            <span className="text-white">🗺️ 🛒</span>
+          </h1>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-1 gap-y-1 lg:gap-x-1 lg:gap-y-1">
+            <div className="flex flex-row items-center justify-center mb-10 md:mb-20 col-start-1 col-span-3 mt-20">
+              <img
+                src="./images/Asset/Peta_UMKM.jpg"
+                alt="icon persons"
+                className="mb-10 object-contain w-10/12"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   );
 }
