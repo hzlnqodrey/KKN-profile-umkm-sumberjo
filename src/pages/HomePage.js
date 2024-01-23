@@ -231,17 +231,13 @@ function HomePage() {
               air terjun (curug). Padukuhan Sumberjo juga berada di area
               perbukitan karst Menoreh wilayah utara kabupaten Kulon Progo
               sehingga memiliki medan yang cukup ekstrim dengan batuan kerasnya.
-              Hal ini menyebabkan akses jalan (aspal atau beton) kurang memadai
-              pada Padukuhan Sumberjo. Potensi bahaya yang dapat muncul pada
-              area ini yaitu longsor, banjir, dan gempa bumi. Padukuhan Sumberjo
-              memiliki luas wilayah seluas 105,28 Ha.
             </h2>
             <div className="text-white basis-3 lg:basis-2/6 mt-50">
               <ul className="flex flex-row justify-self-start content-between">
                 <li className="flex">
                   <a href="https://www.linkedin.com/in/hazlanmqodri/">
                     <img
-                      src="./images/Asset/Youtube.svg"
+                      src="./images/youtube_1.svg"
                       alt="icon"
                       className="w-5 mr-3 bg-spa"
                     />
@@ -259,7 +255,7 @@ function HomePage() {
                 <li className="ml-10 flex">
                   <a href="https://github.com/hzlnqodrey">
                     <img
-                      src="./images/Asset/Tiktok.svg"
+                      src="./images/tiktok_1.svg"
                       alt="icon"
                       className="w-5 mr-3"
                     />
@@ -396,7 +392,7 @@ function HomePage() {
           </div>
           <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
-              src="./images/Asset/ibuk-epfita.png"
+              src="./images/Asset/RT_55.jpg"
               alt="icon persons"
               className="max-w-sm mb-10 object-contain h-72 w-144"
             />
@@ -438,7 +434,7 @@ function HomePage() {
           </div>
           <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
-              src="./images/Asset/ibuk-epfita.png"
+              src="./images/Asset/RT_58.jpg"
               alt="icon persons"
               className="max-w-sm mb-10 object-contain h-72 w-144"
             />
@@ -466,7 +462,7 @@ function HomePage() {
           </div>
           <div className="flex flex-col justify-center mb-10 md:mb-20">
             <img
-              src="./images/Asset/ibuk-epfita.png"
+              src="./images/Asset/RT_60.jpg"
               alt="icon persons"
               className="max-w-sm mb-10 object-contain h-72 w-144"
             />
