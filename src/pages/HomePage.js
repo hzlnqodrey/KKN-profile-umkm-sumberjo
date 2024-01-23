@@ -1210,7 +1210,18 @@ function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-7 gap-8 md:gap-12 lg:gap-5 xl:gap-6">
-            <MyComponent />
+            <iframe
+              title="This is a youtube video frame"
+              id="map_sumberjo"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.709285751882!2d110.13677102554435!3d-7.7744010796283645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aef4e2c5b9aa3%3A0xf42f43c180c7fb8b!2sDusun%20Sumberrejo!5e0!3m2!1sen!2sid!4v1706013623090!5m2!1sen!2sid"
+              width="320"
+              height="750"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            {/* OLD GOOGLE API MAP */}
+            {/* <MyComponent /> */}
           </div>
         </div>
       </div>
@@ -1234,10 +1245,9 @@ function HomePage() {
               />
             </div>
           </div>
+
         </div>
       </div>
-
-
     </div>
   );
 }

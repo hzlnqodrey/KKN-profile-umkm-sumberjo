@@ -1,63 +1,89 @@
-// MAP
-// GOOGLE MAP API:
-// AIzaSyB8VFULsnTm8pnNuakeHs0psWAymG7GBr4
+// // MAP
+// // GOOGLE MAP API:
+// // AIzaSyB8VFULsnTm8pnNuakeHs0psWAymG7GBr4
 
-import React from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+// // DUSUN SUMBERJO KOORDINAT
+// // latitude: -7.7746623 | langitude: 110.1364073
 
-const containerStyle = {
-  width: "300px",
-  height: "500px",
-};
+// import React from "react";
+// import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
-const OPTIONS = {
-  minZoom: -2,
-  maxZoom: -4,
-}
+// const containerStyle = {
+//   width: "300px",
+//   height: "500px",
+// };
 
-const center = {
-  lat: -7.773725986480713,
-  lng: 110.13545227050781,
-  zoom: 17
-};
+// const OPTIONS = {
+//   minZoom: -2,
+//   maxZoom: -4,
+// }
 
-function MyComponent() {
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyB8VFULsnTm8pnNuakeHs0psWAymG7GBr4",
-  });
+// const center = {
+//   lat: -7.7746623,
+//   lng: 110.1364073,
+//   zoom: 17
+// };
 
-  const [map, setMap] = React.useState(null);
+// function MyComponent() {
+//   const { isLoaded } = useJsApiLoader({
+//     id: "google-map-script",
+//     googleMapsApiKey: "AIzaSyB8VFULsnTm8pnNuakeHs0psWAymG7GBr4",
+//   });
 
-  const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    // const bounds = new window.google.maps.LatLngBounds(center);
-    // map.fitBounds(bounds);
-    map.setZoom(center.zoom)
+//   const [mapRef, setMapRef] = React.useState();
 
-    setMap(map);
-  }, []);
+//   const markers = [
+//     { lat: -7.7746623, lng: 110.1364073 },
+//   ];
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+//   const [map, setMap] = React.useState(null);
 
-  return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={center}
-      zoom={-20}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
-      className="h-48 w-96 max-w-sm mb-10 object-contain"
-      options = {OPTIONS}
-    >
-      {/* Child components, such as markers, info windows, etc. */}
-      <></>
-    </GoogleMap>
-  ) : (
-    <></>
-  );
-}
+//   const onLoad = React.useCallback(function callback(map) {
+//     // This is just an example of getting and using the map instance!!! don't just blindly copy!
+//     const bounds = new window.google.maps.LatLngBounds(center);
+//     map.fitBounds(bounds);
+//     map.setZoom(center.zoom)
+//     markers?.forEach(({ lat, lng }) => bounds.extend({ lat, lng }));
+//     setMapRef(map);
 
-export default React.memo(MyComponent);
+//     setMap(map);
+//   }, []);
+
+//   const handleMarkerClick = (lat, lng) => {
+//     mapRef?.setZoom(15);
+//     mapRef?.panTo({ lat, lng });
+//   };
+
+//   const onUnmount = React.useCallback(function callback(map) {
+//     setMap(null);
+//   }, []);
+
+//   return isLoaded ? (
+//     <GoogleMap
+//       mapContainerStyle={containerStyle}
+//       center={center}
+//       zoom={-20}
+//       onLoad={onLoad}
+//       onUnmount={onUnmount}
+//       className="h-48 w-96 max-w-sm mb-10 object-contain"
+//       options = {OPTIONS}
+//     >
+//       {/* Child components, such as markers, info windows, etc. */}
+//       {markers.map(({ lat, lng }) => (
+//         <Marker
+//           onClick={() => {
+//             handleMarkerClick(lat, lng);
+//           }}
+//           position={{ lat, lng }}
+//         />
+//       ))}
+//       <></>
+
+
+//     </GoogleMap>
+//   ) : (
+//     <></>
+//   );
+// }
+
+// export default React.memo(MyComponent);
