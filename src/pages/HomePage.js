@@ -5,7 +5,7 @@ import { Chrono } from "react-chrono";
 // import ProfileCV from "../assets/Hazlan Muhammad Qodri_CV.pdf";
 
 import BlogHome from "../components/BlogHome";
-import MyComponent from "../components/MapHome";
+// import MyComponent from "../components/MapHome";
 
 function HomePage() {
   const items = [
@@ -554,7 +554,7 @@ function HomePage() {
           </div>
           <Splide hasTrack={false} aria-label="My Favorite Images">
             <div className="custom-wrapper">
-              <div className="splide__arrows absolute right-0 -top-24">
+              <div className="splide__arrows absolute right-0 -top-16 mt-2">
                 <button className="splide__arrow splide__arrow--prev mr-5">
                   <img src="./images/ic-prev.svg" alt="prev" />
                 </button>
@@ -840,8 +840,8 @@ function HomePage() {
             <div className="mb-16"></div>
             <Splide hasTrack={false} aria-label="My Favorite Images">
               <div className="custom-wrapper justify-items-center content-around ">
-                <div className="splide__arrows absolute right-0 -top-24">
-                  <button className="splide__arrow splide__arrow--prev mr-5">
+                <div className="splide__arrows absolute right-0 -top-16 mt-2">
+                  <button className="splide__arrow splide__arrow--prev mr-5 ">
                     <img src="./images/ic-prev.svg" alt="prev" />
                   </button>
                   <button className="splide__arrow splide__arrow--next">
